@@ -1,5 +1,5 @@
 //
-// Created by me on 13-07-2021.
+// Created by mukul on 13-07-2021.
 //
 #include <bits/stdc++.h>
 #define SYNC ios_base::sync_with_stdio(false); cin.tie(nullptr);
@@ -85,6 +85,18 @@ class disjoint_set_ubsize_pc{
         if(a==b)return true;
         return false;
     }
+    
+    /*
+     * no of disjoint set
+     */
+    ll no_of_disjoint_set(){
+        ll cnt=0;
+        FR_IR(i,0,n){
+            if(parent[i]==i)cnt++;
+        }
+        return cnt;
+    }    
+     
     /*
      * prints all the sets
      * can be little faster
@@ -123,4 +135,4 @@ void soln(ll t){
 
 }
 
-TEST_DRIVER
+DRIVER
