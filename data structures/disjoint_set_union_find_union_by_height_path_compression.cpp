@@ -86,6 +86,19 @@ class disjoint_set_ubheight_pc{
         if(a==b)return true;
         return false;
     }
+        
+        
+    /*
+     * no of disjoint set
+     */
+    ll no_of_disjoint_set(){
+        ll cnt=0;
+        FR_IR(i,0,n){
+            if(parent[i]==i)cnt++;
+        }
+        return cnt;
+    }
+    
     /*
      * prints all the sets
      * can be little faster
@@ -124,4 +137,4 @@ void soln(ll t){
 
 }
 
-TEST_DRIVER
+DRIVER
