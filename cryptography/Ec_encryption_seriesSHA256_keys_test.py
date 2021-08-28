@@ -5,7 +5,7 @@ cr=crypto()
 #private key
 s_pr_k=123873482648723345345346478237468273 #senders private key
 r_pr_k=37458347958734957236478237468273 #reveiver private key
-r=86878768768768786768768678 #a random number
+r=86878768768768786768768678 #a random number **THIS NUMBER SHOULD BE GENERATED USING SOME GOOD RANDOM FUNCTION
 
 #public key
 s_pub_k=cr.ECmult(s_pr_k)#sender's public key
