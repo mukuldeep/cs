@@ -1,0 +1,12 @@
+;<title>
+
+LDA 0000H
+MOV H,A
+LDA 0001H
+ADD H
+MOV L,A
+MVI A,00H
+ADC A
+MOV H,A
+SHLD 0002H
+hlt
