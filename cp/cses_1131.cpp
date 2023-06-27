@@ -4,7 +4,7 @@
  * Time complexity: O(2n) (as every node visited twice), = O(n) where n is number of nodes.
  */
 #include <bits/stdc++.h>
-#define DEBUG
+//#define DEBUG
 //#define DEBUG_LOG
 //#define TESTCASES
 
