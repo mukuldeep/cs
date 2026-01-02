@@ -3,6 +3,8 @@ project(cpp_multithreading)
 
 set(CMAKE_CXX_STANDARD 14)
 
+
+#file(GLOB_RECURSE CONFIGURE_DEPENDS all_source_files "*.cpp" "*.cxx")
 file(GLOB_RECURSE all_source_files "*.cpp" "*.cxx")
 
 foreach(source_file IN LISTS all_source_files)
